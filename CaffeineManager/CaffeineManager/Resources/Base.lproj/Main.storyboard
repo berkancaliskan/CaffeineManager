@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="CaffeineManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ER-6N-GpY">
+                                <rect key="frame" x="55" y="114" width="283" height="144"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="CzU-Sj-yb2"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="08E-hh-FbX">
+                                <rect key="frame" x="0.0" y="338" width="393" height="380"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uh3-38-5b4">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReD-r0-7vA">
+                                                <rect key="frame" x="30" y="10" width="333" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="QR Kod">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ReD-r0-7vA" secondAttribute="trailing" constant="30" id="54Q-ik-7Av"/>
+                                            <constraint firstItem="ReD-r0-7vA" firstAttribute="top" secondItem="Uh3-38-5b4" secondAttribute="top" constant="10" id="eol-Br-1sH"/>
+                                            <constraint firstAttribute="bottom" secondItem="ReD-r0-7vA" secondAttribute="bottom" constant="10" id="g28-zl-Iya"/>
+                                            <constraint firstItem="ReD-r0-7vA" firstAttribute="leading" secondItem="Uh3-38-5b4" secondAttribute="leading" constant="30" id="tib-34-pzk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEI-Ng-YZ4">
+                                        <rect key="frame" x="0.0" y="95" width="393" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abC-3e-fGN">
+                                                <rect key="frame" x="30" y="10" width="333" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="QR Kod">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="abC-3e-fGN" secondAttribute="trailing" constant="30" id="2bq-6X-c5i"/>
+                                            <constraint firstItem="abC-3e-fGN" firstAttribute="leading" secondItem="CEI-Ng-YZ4" secondAttribute="leading" constant="30" id="2wA-MJ-79W"/>
+                                            <constraint firstItem="abC-3e-fGN" firstAttribute="top" secondItem="CEI-Ng-YZ4" secondAttribute="top" constant="10" id="691-jY-mVm"/>
+                                            <constraint firstAttribute="bottom" secondItem="abC-3e-fGN" secondAttribute="bottom" constant="10" id="nE0-5c-qp1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K87-uM-SQW">
+                                        <rect key="frame" x="0.0" y="190" width="393" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zd-yl-kRJ">
+                                                <rect key="frame" x="30" y="10" width="333" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="QR Kod">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="2Zd-yl-kRJ" secondAttribute="bottom" constant="10" id="518-0g-Xn0"/>
+                                            <constraint firstItem="2Zd-yl-kRJ" firstAttribute="leading" secondItem="K87-uM-SQW" secondAttribute="leading" constant="30" id="EHk-5y-hbx"/>
+                                            <constraint firstAttribute="trailing" secondItem="2Zd-yl-kRJ" secondAttribute="trailing" constant="30" id="HTy-Zr-ClS"/>
+                                            <constraint firstItem="2Zd-yl-kRJ" firstAttribute="top" secondItem="K87-uM-SQW" secondAttribute="top" constant="10" id="bJy-3S-wJQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1t0-Xb-7k2">
+                                        <rect key="frame" x="0.0" y="285" width="393" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juT-7s-ww2">
+                                                <rect key="frame" x="30" y="10" width="333" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="QR Kod">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="juT-7s-ww2" firstAttribute="leading" secondItem="1t0-Xb-7k2" secondAttribute="leading" constant="30" id="Qxe-zX-VT9"/>
+                                            <constraint firstItem="juT-7s-ww2" firstAttribute="top" secondItem="1t0-Xb-7k2" secondAttribute="top" constant="10" id="rRG-dq-T9f"/>
+                                            <constraint firstAttribute="bottom" secondItem="juT-7s-ww2" secondAttribute="bottom" constant="10" id="uX0-0A-6Ie"/>
+                                            <constraint firstAttribute="trailing" secondItem="juT-7s-ww2" secondAttribute="trailing" constant="30" id="xZW-Ld-VxQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4ER-6N-GpY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="55" id="Yuc-dy-cJt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="08E-hh-FbX" secondAttribute="trailing" id="ZaJ-53-SMM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="08E-hh-FbX" secondAttribute="bottom" constant="100" id="eAG-rr-Cae"/>
+                            <constraint firstItem="08E-hh-FbX" firstAttribute="top" secondItem="4ER-6N-GpY" secondAttribute="bottom" constant="80" id="ejH-B3-6tm"/>
+                            <constraint firstItem="08E-hh-FbX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fex-wZ-izP"/>
+                            <constraint firstItem="4ER-6N-GpY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="nvt-cR-bDs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ER-6N-GpY" secondAttribute="trailing" constant="55" id="pwb-nH-LbT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blogButton" destination="2Zd-yl-kRJ" id="u1d-mI-Qzm"/>
+                        <outlet property="campaignButton" destination="juT-7s-ww2" id="Tle-EM-bgJ"/>
+                        <outlet property="menuButton" destination="abC-3e-fGN" id="adG-zs-hx7"/>
+                        <outlet property="qrButton" destination="ReD-r0-7vA" id="flj-sP-hz5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-860" y="171"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fzp-qU-aKR">
+            <objects>
+                <viewController id="Jr1-tS-nbk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HzL-0d-71K">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BwR-ML-3Zm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQL-bX-UWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="573"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dqu-vc-nSI">
+            <objects>
+                <viewController id="BBI-H7-xZW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pWV-0y-8ks">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CCl-Ry-jVF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvM-8l-6fR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="-187"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
